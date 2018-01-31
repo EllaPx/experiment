@@ -37,6 +37,10 @@
 				<label for="password">Your Password</label>
 				<input class="form-control" type="password" name="password" id="email" value="{{ Request::old('password') }}">
 			</div>
+			<div class="form-group">
+				<label for="password">Retype Password</label>
+				<input class="form-control" type="password" name="password" id="pass" >
+			</div>
 			<button type="submit" class="btn btn-primary">Submit</button>
 			<input type="hidden" name="_token" value="{{ Session::token() }}">
 		</form>
